@@ -38,4 +38,31 @@ $(document).ready(function() {
 		skin_credits.append(html);
 	});
 	
+	
+	/**
+	 * Banners
+	 *
+	 */ 
+	var banners = [
+		{
+			label: 'AudioTheme',
+			image: 'audiotheme.png',
+			link: 'http://audiotheme.com?source=jp-skins-demo'
+		},
+		{
+			label: 'Easy Digital Downloads',
+			image: 'easy-digital-downloads.png',
+			link: 'http://easydigitaldownloads.com?ref=9&source=jp-skins-demo'
+		},
+		{ 
+			label: 'Press75',
+			image: 'press75.png',
+			link: 'http://press75.com?source=jp-skins-demo'
+		}
+	];
+	
+	var banner = banners[Math.floor(Math.random() * banners.length)];
+
+	$('<a href="' + banner['link'] + '" target="_blank" onClick="_gaq.push(["_trackEvent", "Banners", "Click", "' +  banner['label'] + '"]);"><img src="images/banners/' + banner['image'] + '"></a>').appendTo('#banner');
+	 
 });
