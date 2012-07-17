@@ -29,9 +29,7 @@ $(document).ready(function() {
 	 *
 	 */ 
 	var skin_credits_url = skin_uri + '/credits.html';
-	
-	alert(newString);
-	
+
 	$.ajax({
 		url: skin_credits_url,
 		crossDomain: true,
