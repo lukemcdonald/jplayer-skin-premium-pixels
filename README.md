@@ -1,6 +1,6 @@
 # jPlayer Skins
 
-A collection of basic skins for the [jPlayer](http://jplayer.org/), the jQuery HTML5 Audio / Video Library.
+A collection of basic skins for [jPlayer](http://jplayer.org/), the jQuery HTML5 Audio / Video Library.
 
 ## Creating Skins
 
