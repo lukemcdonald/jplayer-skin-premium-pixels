@@ -60,7 +60,7 @@ body {
 ----------------------------------------------- */
 .jp-jplayer {
   width: 100%;
-  height: 0px;
+  height: 100%;
   background-color: #000000;
 }
 .jp-audio {
