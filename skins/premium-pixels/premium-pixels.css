@@ -343,7 +343,7 @@ body {
 /* PLAYLIST
 ----------------------------------------------- */
 .jp-playlist {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   font-size: 13px;
   background-color: #3a3b3c;
