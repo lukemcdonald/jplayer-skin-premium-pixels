@@ -37,7 +37,7 @@ body {
   background: url(images/bg.jpg);
 }
 #skin-wrapper {
-  padding-top: 176px;
+  padding-top: 0px;
   background: url(images/bg-player.png) center 0 no-repeat;
 }
 #credits {
