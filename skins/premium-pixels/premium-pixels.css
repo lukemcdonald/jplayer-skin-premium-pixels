@@ -8,8 +8,6 @@
  * Version: 2.0
  * Tags: audio, playlist, dark, play, pause, volume-bar, progress-bar
  */
-/* DEMO STYLES
------------------------------------------------ */
 * {
   padding: 0;
   margin: 0;
@@ -33,41 +31,25 @@
   transition-timing-function: linear;
   transition-duration: 0.15s;
 }
-body {
-  background: url(images/bg.jpg);
-}
+/* DEMO STYLES
+----------------------------------------------- */
 #skin-wrapper {
-  padding-top: 176px;
+  padding-top: 0px;
   background: url(images/bg-player.png) center 0 no-repeat;
 }
-#credits {
-  margin: 0;
-  padding: 50px 0;
-  color: #d2d6db;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: center;
-}
-#credits a {
-  color: #c0c8d6;
-  text-decoration: none;
-}
-#credits a:hover {
-  color: #a6b2c8;
-}
+
 /* GENERAL
 ----------------------------------------------- */
 .jp-jplayer {
-  width: 0px;
-  height: 0px;
+  width: 100%;
+  height: 100%;
   background-color: #000000;
 }
 .jp-audio {
   margin: 0 auto;
-  width: 400px;
+  width: 100%;
   max-width: 100%;
-  padding: 0 20px;
+  padding: 0 0px;
   font-size: 1em;
   font-family: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #fff;
@@ -343,7 +325,7 @@ body {
 /* PLAYLIST
 ----------------------------------------------- */
 .jp-playlist {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   font-size: 13px;
   background-color: #3a3b3c;
