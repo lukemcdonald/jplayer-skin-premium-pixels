@@ -8,7 +8,7 @@ $(document).ready(function() {
 	var skin_wrapper = $('#skin-wrapper');
 	var skin_name = skin_wrapper.data('skin-name');
 	var skin_credits = $('#credits');
-	var skin_uri = 'https://github.com/dottobr83/jplayer-skins/tree/gh-pages/skins' + skin_name;
+	var skin_uri = 'https://github.com/dottobr83/jplayer-skins/tree/gh-pages/skins/' + skin_name;
 	
 	/**
 	 * Skin Styles and Display
