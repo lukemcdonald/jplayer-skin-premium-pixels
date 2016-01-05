@@ -23,13 +23,13 @@ module.exports = function(grunt) {
 		less: {
 			files: {
 				src: 'assets/less/style.less',
-				dest: 'style.css'
+				dest: 'assets/css/style.css'
 			}
 		},
 		pixrem: {
 			files: {
-				src: 'style.css',
-				dest: 'style.css'
+				src: 'assets/css/style.css',
+				dest: 'assets/css/style.css'
 			}
 		},
 		postcss: {
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
 				]
 			},
 			files: {
-				src: 'style.css'
+				src: 'assets/css/style.css'
 			}
 		}
 	});
