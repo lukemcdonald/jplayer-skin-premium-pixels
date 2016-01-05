@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>themicons</title>
+		<style>
+		body {
+			background: #fff;
+			color: #222;
+			font-family: "Helvetica Neue", Arial, sans-serif;
+			margin: 0;
+			padding: 10px 20px;
+		}
+
+		h1 {
+			font-size: 32px;
+			font-weight: normal;
+			margin: 0 0 20px;
+		}
+
+		.icons {
+			-webkit-column-count: 5;
+			   -moz-column-count: 5;
+			        column-count: 5;
+			-webkit-column-gap: 20px;
+			   -moz-column-gap: 20px;
+			        column-gap: 20px;
+			margin-bottom: 40px;
+		}
+
+		.icons__item,
+		.icons__item i {
+			cursor: pointer;
+			line-height: 2em;
+		}
+
+		.icons__item:hover {
+			color: #3c90be;
+		}
+
+		.icons__item i {
+			display: inline-block;
+			font-size: 24px;
+			text-align: center;
+			width: 48px;
+		}
+
+		.icons__item:hover i {
+			-webkit-transform: scale(1.5);
+			        transform: scale(1.5);
+		}
+
+		footer {
+			color: #999;
+			font-size: 14px;
+			margin-top: 40px;
+		}
+		@font-face {
+	font-family: "themicons";
+	src: url("themicons.woff2") format("woff2"),
+		url("themicons.woff") format("woff"),
+		url("themicons.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.themicon {
+	display: inline-block;
+	font-family: "themicons";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	speak: none;
+	text-decoration: inherit;
+	text-transform: none;
+	vertical-align: middle;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.themicon-amazon:before { content: "\f100";}
+.themicon-apple:before { content: "\f101";}
+.themicon-arrow-down:before { content: "\f200";}
+.themicon-arrow-left:before { content: "\f201";}
+.themicon-arrow-right:before { content: "\f202";}
+.themicon-arrow-up:before { content: "\f203";}
+.themicon-bandcamp:before { content: "\f102";}
+.themicon-calendar:before { content: "\f21a";}
+.themicon-cancel:before { content: "\f215";}
+.themicon-caret-down:before { content: "\f204";}
+.themicon-caret-left:before { content: "\f205";}
+.themicon-caret-right:before { content: "\f206";}
+.themicon-caret-up:before { content: "\f207";}
+.themicon-cart:before { content: "\f218";}
+.themicon-category:before { content: "\f21b";}
+.themicon-chevron-down:before { content: "\f208";}
+.themicon-chevron-left:before { content: "\f209";}
+.themicon-chevron-right:before { content: "\f20a";}
+.themicon-chevron-up:before { content: "\f20b";}
+.themicon-close:before { content: "\f20c";}
+.themicon-comment:before { content: "\f219";}
+.themicon-edit:before { content: "\f21f";}
+.themicon-ellipsis:before { content: "\f220";}
+.themicon-error:before { content: "\f216";}
+.themicon-external:before { content: "\f20d";}
+.themicon-facebook-alt:before { content: "\f104";}
+.themicon-facebook:before { content: "\f103";}
+.themicon-fast-forward:before { content: "\f150";}
+.themicon-feed:before { content: "\f20e";}
+.themicon-flickr:before { content: "\f105";}
+.themicon-format-aside:before { content: "\f1d0";}
+.themicon-format-audio:before { content: "\f1d1";}
+.themicon-format-chat:before { content: "\f1d2";}
+.themicon-format-gallery:before { content: "\f1d3";}
+.themicon-format-image:before { content: "\f1d4";}
+.themicon-format-link:before { content: "\f1d5";}
+.themicon-format-quote:before { content: "\f1d6";}
+.themicon-format-standard:before { content: "\f1d7";}
+.themicon-format-status:before { content: "\f1d8";}
+.themicon-format-video:before { content: "\f1d9";}
+.themicon-googleplay-alt:before { content: "\f107";}
+.themicon-googleplay:before { content: "\f106";}
+.themicon-googleplus:before { content: "\f108";}
+.themicon-instagram:before { content: "\f109";}
+.themicon-kebab:before { content: "\f221";}
+.themicon-lastfm:before { content: "\f10a";}
+.themicon-link-alt:before { content: "\f210";}
+.themicon-link:before { content: "\f20f";}
+.themicon-linkedin:before { content: "\f10b";}
+.themicon-loading:before { content: "\f217";}
+.themicon-loop:before { content: "\f15a";}
+.themicon-mail:before { content: "\f211";}
+.themicon-menu:before { content: "\f212";}
+.themicon-minus:before { content: "\f118";}
+.themicon-pause:before { content: "\f151";}
+.themicon-person:before { content: "\f213";}
+.themicon-pinterest:before { content: "\f10c";}
+.themicon-play:before { content: "\f152";}
+.themicon-playlist:before { content: "\f153";}
+.themicon-plus:before { content: "\f119";}
+.themicon-rdio:before { content: "\f10d";}
+.themicon-repeat:before { content: "\f15b";}
+.themicon-restore:before { content: "\f214";}
+.themicon-reverbnation:before { content: "\f10e";}
+.themicon-rewind:before { content: "\f154";}
+.themicon-search:before { content: "\f21d";}
+.themicon-share-alt:before { content: "\f110";}
+.themicon-share:before { content: "\f10f";}
+.themicon-shuffle:before { content: "\f15c";}
+.themicon-skip-ahead:before { content: "\f155";}
+.themicon-skip-back:before { content: "\f156";}
+.themicon-soundcloud:before { content: "\f111";}
+.themicon-spotify:before { content: "\f112";}
+.themicon-stop:before { content: "\f157";}
+.themicon-tag:before { content: "\f21c";}
+.themicon-time:before { content: "\f21e";}
+.themicon-tumblr:before { content: "\f113";}
+.themicon-twitter:before { content: "\f114";}
+.themicon-vimeo:before { content: "\f115";}
+.themicon-vine:before { content: "\f11a";}
+.themicon-volume-off:before { content: "\f158";}
+.themicon-volume-on:before { content: "\f159";}
+.themicon-wordpress:before { content: "\f116";}
+.themicon-youtube:before { content: "\f117";}
+
+		</style>
+	</head>
+	<body>
+		<h1>themicons</h1>
+
+		<pre><code>&lt;i class=&quot;themicon themicon-<span id="name">name</span>&quot;&gt;&lt;/i&gt;</code></pre>
+		
+
+		<div class="icons" id="icons">
+			
+				<div class="icons__item" data-name="amazon"><i class="themicon themicon-amazon"></i> themicon-amazon</div>
+				<div class="icons__item" data-name="apple"><i class="themicon themicon-apple"></i> themicon-apple</div>
+				<div class="icons__item" data-name="arrow-down"><i class="themicon themicon-arrow-down"></i> themicon-arrow-down</div>
+				<div class="icons__item" data-name="arrow-left"><i class="themicon themicon-arrow-left"></i> themicon-arrow-left</div>
+				<div class="icons__item" data-name="arrow-right"><i class="themicon themicon-arrow-right"></i> themicon-arrow-right</div>
+				<div class="icons__item" data-name="arrow-up"><i class="themicon themicon-arrow-up"></i> themicon-arrow-up</div>
+				<div class="icons__item" data-name="bandcamp"><i class="themicon themicon-bandcamp"></i> themicon-bandcamp</div>
+				<div class="icons__item" data-name="calendar"><i class="themicon themicon-calendar"></i> themicon-calendar</div>
+				<div class="icons__item" data-name="cancel"><i class="themicon themicon-cancel"></i> themicon-cancel</div>
+				<div class="icons__item" data-name="caret-down"><i class="themicon themicon-caret-down"></i> themicon-caret-down</div>
+				<div class="icons__item" data-name="caret-left"><i class="themicon themicon-caret-left"></i> themicon-caret-left</div>
+				<div class="icons__item" data-name="caret-right"><i class="themicon themicon-caret-right"></i> themicon-caret-right</div>
+				<div class="icons__item" data-name="caret-up"><i class="themicon themicon-caret-up"></i> themicon-caret-up</div>
+				<div class="icons__item" data-name="cart"><i class="themicon themicon-cart"></i> themicon-cart</div>
+				<div class="icons__item" data-name="category"><i class="themicon themicon-category"></i> themicon-category</div>
+				<div class="icons__item" data-name="chevron-down"><i class="themicon themicon-chevron-down"></i> themicon-chevron-down</div>
+				<div class="icons__item" data-name="chevron-left"><i class="themicon themicon-chevron-left"></i> themicon-chevron-left</div>
+				<div class="icons__item" data-name="chevron-right"><i class="themicon themicon-chevron-right"></i> themicon-chevron-right</div>
+				<div class="icons__item" data-name="chevron-up"><i class="themicon themicon-chevron-up"></i> themicon-chevron-up</div>
+				<div class="icons__item" data-name="close"><i class="themicon themicon-close"></i> themicon-close</div>
+				<div class="icons__item" data-name="comment"><i class="themicon themicon-comment"></i> themicon-comment</div>
+				<div class="icons__item" data-name="edit"><i class="themicon themicon-edit"></i> themicon-edit</div>
+				<div class="icons__item" data-name="ellipsis"><i class="themicon themicon-ellipsis"></i> themicon-ellipsis</div>
+				<div class="icons__item" data-name="error"><i class="themicon themicon-error"></i> themicon-error</div>
+				<div class="icons__item" data-name="external"><i class="themicon themicon-external"></i> themicon-external</div>
+				<div class="icons__item" data-name="facebook-alt"><i class="themicon themicon-facebook-alt"></i> themicon-facebook-alt</div>
+				<div class="icons__item" data-name="facebook"><i class="themicon themicon-facebook"></i> themicon-facebook</div>
+				<div class="icons__item" data-name="fast-forward"><i class="themicon themicon-fast-forward"></i> themicon-fast-forward</div>
+				<div class="icons__item" data-name="feed"><i class="themicon themicon-feed"></i> themicon-feed</div>
+				<div class="icons__item" data-name="flickr"><i class="themicon themicon-flickr"></i> themicon-flickr</div>
+				<div class="icons__item" data-name="format-aside"><i class="themicon themicon-format-aside"></i> themicon-format-aside</div>
+				<div class="icons__item" data-name="format-audio"><i class="themicon themicon-format-audio"></i> themicon-format-audio</div>
+				<div class="icons__item" data-name="format-chat"><i class="themicon themicon-format-chat"></i> themicon-format-chat</div>
+				<div class="icons__item" data-name="format-gallery"><i class="themicon themicon-format-gallery"></i> themicon-format-gallery</div>
+				<div class="icons__item" data-name="format-image"><i class="themicon themicon-format-image"></i> themicon-format-image</div>
+				<div class="icons__item" data-name="format-link"><i class="themicon themicon-format-link"></i> themicon-format-link</div>
+				<div class="icons__item" data-name="format-quote"><i class="themicon themicon-format-quote"></i> themicon-format-quote</div>
+				<div class="icons__item" data-name="format-standard"><i class="themicon themicon-format-standard"></i> themicon-format-standard</div>
+				<div class="icons__item" data-name="format-status"><i class="themicon themicon-format-status"></i> themicon-format-status</div>
+				<div class="icons__item" data-name="format-video"><i class="themicon themicon-format-video"></i> themicon-format-video</div>
+				<div class="icons__item" data-name="googleplay-alt"><i class="themicon themicon-googleplay-alt"></i> themicon-googleplay-alt</div>
+				<div class="icons__item" data-name="googleplay"><i class="themicon themicon-googleplay"></i> themicon-googleplay</div>
+				<div class="icons__item" data-name="googleplus"><i class="themicon themicon-googleplus"></i> themicon-googleplus</div>
+				<div class="icons__item" data-name="instagram"><i class="themicon themicon-instagram"></i> themicon-instagram</div>
+				<div class="icons__item" data-name="kebab"><i class="themicon themicon-kebab"></i> themicon-kebab</div>
+				<div class="icons__item" data-name="lastfm"><i class="themicon themicon-lastfm"></i> themicon-lastfm</div>
+				<div class="icons__item" data-name="link-alt"><i class="themicon themicon-link-alt"></i> themicon-link-alt</div>
+				<div class="icons__item" data-name="link"><i class="themicon themicon-link"></i> themicon-link</div>
+				<div class="icons__item" data-name="linkedin"><i class="themicon themicon-linkedin"></i> themicon-linkedin</div>
+				<div class="icons__item" data-name="loading"><i class="themicon themicon-loading"></i> themicon-loading</div>
+				<div class="icons__item" data-name="loop"><i class="themicon themicon-loop"></i> themicon-loop</div>
+				<div class="icons__item" data-name="mail"><i class="themicon themicon-mail"></i> themicon-mail</div>
+				<div class="icons__item" data-name="menu"><i class="themicon themicon-menu"></i> themicon-menu</div>
+				<div class="icons__item" data-name="minus"><i class="themicon themicon-minus"></i> themicon-minus</div>
+				<div class="icons__item" data-name="pause"><i class="themicon themicon-pause"></i> themicon-pause</div>
+				<div class="icons__item" data-name="person"><i class="themicon themicon-person"></i> themicon-person</div>
+				<div class="icons__item" data-name="pinterest"><i class="themicon themicon-pinterest"></i> themicon-pinterest</div>
+				<div class="icons__item" data-name="play"><i class="themicon themicon-play"></i> themicon-play</div>
+				<div class="icons__item" data-name="playlist"><i class="themicon themicon-playlist"></i> themicon-playlist</div>
+				<div class="icons__item" data-name="plus"><i class="themicon themicon-plus"></i> themicon-plus</div>
+				<div class="icons__item" data-name="rdio"><i class="themicon themicon-rdio"></i> themicon-rdio</div>
+				<div class="icons__item" data-name="repeat"><i class="themicon themicon-repeat"></i> themicon-repeat</div>
+				<div class="icons__item" data-name="restore"><i class="themicon themicon-restore"></i> themicon-restore</div>
+				<div class="icons__item" data-name="reverbnation"><i class="themicon themicon-reverbnation"></i> themicon-reverbnation</div>
+				<div class="icons__item" data-name="rewind"><i class="themicon themicon-rewind"></i> themicon-rewind</div>
+				<div class="icons__item" data-name="search"><i class="themicon themicon-search"></i> themicon-search</div>
+				<div class="icons__item" data-name="share-alt"><i class="themicon themicon-share-alt"></i> themicon-share-alt</div>
+				<div class="icons__item" data-name="share"><i class="themicon themicon-share"></i> themicon-share</div>
+				<div class="icons__item" data-name="shuffle"><i class="themicon themicon-shuffle"></i> themicon-shuffle</div>
+				<div class="icons__item" data-name="skip-ahead"><i class="themicon themicon-skip-ahead"></i> themicon-skip-ahead</div>
+				<div class="icons__item" data-name="skip-back"><i class="themicon themicon-skip-back"></i> themicon-skip-back</div>
+				<div class="icons__item" data-name="soundcloud"><i class="themicon themicon-soundcloud"></i> themicon-soundcloud</div>
+				<div class="icons__item" data-name="spotify"><i class="themicon themicon-spotify"></i> themicon-spotify</div>
+				<div class="icons__item" data-name="stop"><i class="themicon themicon-stop"></i> themicon-stop</div>
+				<div class="icons__item" data-name="tag"><i class="themicon themicon-tag"></i> themicon-tag</div>
+				<div class="icons__item" data-name="time"><i class="themicon themicon-time"></i> themicon-time</div>
+				<div class="icons__item" data-name="tumblr"><i class="themicon themicon-tumblr"></i> themicon-tumblr</div>
+				<div class="icons__item" data-name="twitter"><i class="themicon themicon-twitter"></i> themicon-twitter</div>
+				<div class="icons__item" data-name="vimeo"><i class="themicon themicon-vimeo"></i> themicon-vimeo</div>
+				<div class="icons__item" data-name="vine"><i class="themicon themicon-vine"></i> themicon-vine</div>
+				<div class="icons__item" data-name="volume-off"><i class="themicon themicon-volume-off"></i> themicon-volume-off</div>
+				<div class="icons__item" data-name="volume-on"><i class="themicon themicon-volume-on"></i> themicon-volume-on</div>
+				<div class="icons__item" data-name="wordpress"><i class="themicon themicon-wordpress"></i> themicon-wordpress</div>
+				<div class="icons__item" data-name="youtube"><i class="themicon themicon-youtube"></i> themicon-youtube</div>
+		</div>
+
+		
+
+		<footer>Generated by <a href="https://github.com/sapegin/grunt-webfont">grunt-webfont</a>.</footer>
+
+		<script>
+		(function() {
+			document.getElementById('icons').onclick = function(e) {
+				e = e || window.event;
+				var name = e.target.getAttribute('data-name') || e.target.parentNode.getAttribute('data-name');
+				document.getElementById('name').innerHTML = name;
+				//document.getElementById('name2').innerHTML = name;
+			}
+		})();
+		</script>
+	</body>
+</html>

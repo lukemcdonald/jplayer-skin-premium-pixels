@@ -1,0 +1,60 @@
+/* jPlayer: Progress Bar
+----------------------------------------------- */
+
+.jp-time-rail {
+	border-left: 1px solid @player-border;
+	border-right: 1px solid @player-border-alt;
+	float: left;
+	height: unit( @player-height / @font-size-base, em );
+	padding: unit( 12 / @font-size-base, em );
+	position: relative;
+	width: calc(~"100% - 115px");
+
+	&:before,
+	&:after {
+		border-left: 1px solid;
+		content: " ";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+	}
+
+	&:before {
+		border-color: @player-border-alt;
+		right: 100%;
+		margin-right: 1px;
+	}
+
+	&:after {
+		border-color: @player-border;
+		left: 100%;
+		margin-left: 1px;
+	}
+}
+
+.jp-progress {
+	background: @player-seek-bar-2;
+	border: 1px solid;
+	border-color: @player-seek-bar-3 @player-seek-bar-2 @player-seek-bar-2;
+	border-radius: @border-radius-small;
+	box-shadow: 0 1px 1px rgba(255,255,255,0.05);
+	height: unit( 7 / @font-size-base, em );
+	width: 100%;
+}
+
+.jp-seek-bar,
+.jp-play-bar {
+	border-radius: @border-radius-small;
+	height: unit( 5 / @font-size-base, em );
+	width: 0;
+}
+
+.jp-seek-bar {
+	background: @player-seek-bar-1;
+	cursor: pointer;
+	position: relative;
+}
+
+.jp-play-bar {
+	animation: progress-bar .75s linear infinite;
+}

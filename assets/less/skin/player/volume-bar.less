@@ -1,0 +1,32 @@
+/* jPlayer: Volume Bar
+----------------------------------------------- */
+
+.jp-volume-bar {
+	float: left;
+	z-index: 99;
+	position: relative;
+	margin: unit( 12 / @font-size-base, em ) 0 0 unit( -5 / @font-size-base, em );
+	width: unit( 40 / @font-size-base, em );
+	height: unit( 7 / @font-size-base, em );
+	cursor: pointer;
+	background: @player-volume-bar;
+	box-shadow: 0 1px 1px rgba(255,255,255,0.05);
+	border-radius: @border-radius-small;
+}
+
+.jp-volume-bar-value {
+	width: 0px;
+	height: unit( 5 / @font-size-base, em );
+	margin: 1px;
+	border-radius: @border-radius-small;
+}
+
+/* Diagonal Background Bars */
+.jp-play-bar,
+.jp-volume-bar-value {
+	box-shadow: inset 0 1px 2px @player-diagonal-bar-3;
+	background-size: unit( 7 / @font-size-base, em ) unit( 7 / @font-size-base, em );
+	#gradient.vertical(@player-diagonal-bar-1, @player-diagonal-bar-2);
+	// Diagonal Background Bar Colors
+	background-image: linear-gradient( -45deg, @player-diagonal-bar-3 25%, transparent 25%, transparent 50%, @player-diagonal-bar-3 50%, @player-diagonal-bar-3 75%, transparent 75%, transparent );
+}

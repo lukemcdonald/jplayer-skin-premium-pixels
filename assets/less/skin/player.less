@@ -1,0 +1,44 @@
+/**
+ * Player
+ * -----------------------------------------------------------------------------
+ */
+
+.jp-jplayer {
+	height: 0px;
+	width: 0px;
+}
+
+.jp-audio {
+	font-size: @font-size-base-rem;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0 unit( 20 / @font-size-base, em );
+
+	a {
+		color: @link-color;
+		text-decoration: none;
+
+		&:hover {
+			color: @link-hover-color;
+		}
+	}
+}
+
+.jp-interface {
+	#gradient.vertical(@neutral-dark, @neutral-darker);
+	border-radius: @border-radius @border-radius 0 0;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	height: unit( @player-height, px );
+	position: relative;
+	width: 100%;
+}
+
+@media (min-width: 480px) {
+	.jp-audio {
+		max-width: unit( @player-width / @font-size-base, em );
+	}
+
+	.jp-interface {
+		border-radius: @border-radius;
+	}
+}

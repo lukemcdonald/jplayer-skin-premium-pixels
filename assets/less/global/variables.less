@@ -1,0 +1,80 @@
+// Colors
+// -------------------------------------------------------------------------- //
+
+@black:                      #000000;
+@white:                      #ffffff;
+
+@neutral-darker:             #2b2d2d;
+@neutral-dark:               #4a4c4d;
+@neutral:                    #999999;
+@neutral-light:              #d2d6db;
+@neutral-lighter:            #eaecee;
+
+@accent-color:               #ff0000;
+
+@body-bg:                    @neutral-lighter;
+@text-color:                 @neutral;
+@headings-color:             @neutral-darker;
+@link-color:                 @neutral-light;
+@link-hover-color:           @white;
+@border-color:               rgba(255,255,255,0.05);
+@border-color-alt:           rgba(0,0,0,0.25);
+
+
+// Typography
+// -------------------------------------------------------------------------- //
+
+// Font Families
+
+@font-family-serif:          "Merriweather", serif;
+@font-family-sans-serif:     "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+@font-family-monospace:      "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+@font-family-icon:           "themicons";
+
+@font-family-base:           @font-family-sans-serif;
+
+// Font Sizes
+
+@font-size-large:            21;
+@font-size-base:             16;
+@font-size-small:            12;
+
+@font-size-large-rem:        unit( @font-size-large / 10, rem );
+@font-size-base-rem:         unit( @font-size-base / 10, rem );
+@font-size-small-rem:        unit( @font-size-small / 10, rem );
+
+// Icons
+
+@icon-size:                  16;
+@icon-size-rem:              unit( @icon-size / 10, rem );
+
+// Line Heights
+
+@line-height-base:           24;
+@line-height:                ( @line-height-base / @font-size-base );
+
+
+// Player
+// -------------------------------------------------------------------------- //
+
+@player-width:               400;
+@player-height:              30;
+@player-playlist-width:      94%; // best set as a percentage of @player-width
+
+@player-button-color:        @neutral-light;
+@player-diagonal-bar-1:      #fff200;
+@player-diagonal-bar-2:      #fcc500;
+@player-diagonal-bar-3:      rgba(255,255,255,0.3);
+@player-border:              @border-color;
+@player-border-alt:          @border-color-alt;
+@player-seek-bar-1:          #464849;
+@player-seek-bar-2:          #262929;
+@player-seek-bar-3:          #212424;
+@player-volume-bar:          @player-seek-bar-2;
+
+
+// Miscellaneous
+// -------------------------------------------------------------------------- //
+
+@border-radius:              unit( 3, px );
+@border-radius-small:        unit( 1, px );

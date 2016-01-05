@@ -1,0 +1,73 @@
+/* jPlayer: Cotrols
+----------------------------------------------- */
+
+.jp-button {
+	float: left;
+}
+
+.jp-play,
+.jp-mute {
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	color: @player-button-color;
+	cursor: pointer;
+	display: block;
+	height: unit( @player-height, px );
+	margin: 0;
+	outline: none;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	text-indent: 110%;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	transition: none;
+	white-space: nowrap;
+	width: unit( 34 / @font-size-base, em );
+
+	&:before {
+		font-size: @icon-size-rem;
+		line-height: unit( @player-height / @icon-size, em );
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+		text-indent: 0;
+	}
+
+	&:hover {
+		color: @white;
+	}
+}
+
+.jp-play {
+	&:before {
+		content: "\f152"; // Play
+		text-indent: unit( 3 / @font-size-base, em );
+	}
+}
+
+.jp-mute {
+	&:before {
+		content: "\f159"; // Volume on
+	}
+}
+
+.jp-state-playing {
+	.jp-play {
+		&:before {
+			content: "\f151"; // Pause
+			text-indent: 0;
+		}
+	}
+}
+
+.jp-state-muted {
+	.jp-mute {
+		&:before {
+			content: "\f158"; // Volume off
+		}
+	}
+}

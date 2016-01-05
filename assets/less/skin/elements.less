@@ -1,0 +1,49 @@
+/**
+ * Elements
+ * -----------------------------------------------------------------------------
+ */
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	overflow-y: scroll;
+}
+
+body {
+	background-color: @body-bg;
+}
+
+p {
+	margin: 0 0 unit( @line-height, em );
+}
+
+ul,
+ol {
+	margin: 0 0 unit( @line-height, em );
+}
+
+ul {
+	list-style-type: disc;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+img {
+	-ms-interpolation-mode: bicubic;
+	border: 0;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+figure {
+	margin: 0;
+}

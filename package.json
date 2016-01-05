@@ -1,0 +1,39 @@
+{
+  "name": "jplayer-premium-pixels",
+  "description": "Premium Pixels jPlayer Skin",
+  "version": "1.0.0",
+  "homepage": "https://github.com/lukemcdonald/jplayer-premium-pixels",
+  "author": {
+    "name": "Luke McDonald",
+    "email": "thelukemcdonald@gmail.com",
+    "url": "http://www.lukemcdonald.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukemcdonald/jplayer-premium-pixels.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lukemcdonald/jplayer-premium-pixels/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "jquery": ">1.7.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1",
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "~0.5",
+    "grunt-contrib-jshint": "~0.11",
+    "grunt-contrib-less": "^1.1.0",
+    "grunt-pixrem": "~0.1",
+    "grunt-postcss": "^0.7"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "audio",
+    "media",
+    "player",
+    "jplayer"
+  ]
+}
+

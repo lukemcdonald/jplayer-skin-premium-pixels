@@ -1,0 +1,89 @@
+/* jPlayer: Playlist
+----------------------------------------------- */
+
+.jp-playlist {
+	background-color: @neutral-dark;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+	border-radius: 0 0 @border-radius @border-radius;
+	font-size: @font-size-small-rem;
+	margin: 0 auto;
+
+	a {
+		display: block;
+		padding: unit( 7 / @font-size-small, em ) unit( 12 / @font-size-small, em );
+	}
+
+	ul {
+		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15);
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	li {
+		border-top: 1px solid @border-color-alt;
+		border-bottom: 1px solid @border-color;
+		width: 100%;
+
+		&:hover {
+			background-color: rgba(0,0,0,0.2);
+		}
+
+		&:first-child {
+			border-top: none;
+		}
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+.jp-free-media {
+	display: block;
+	float: right;
+	font-size: unit( 10 / @font-size-small, em );
+	letter-spacing: unit( 0.05, em );
+	line-height: unit( @line-height-base / @font-size-small, em );
+	margin-right: unit( 12 / @font-size-small, em );
+	padding: unit( 7 / @font-size-small, em ) 0;
+	text-transform: uppercase;
+
+	a {
+		display: inline;
+		padding: 0;
+
+		&:first-child:before,
+		&:last-child:after {
+			content: " ";
+		}
+	}
+}
+
+.jp-state-playing {
+	.jp-playlist-current {
+		border-top-color: rgba(0,0,0,0.35);
+
+		a {
+			background-color: rgba(0,0,0,0.2);
+			color: @white;
+			text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+		}
+
+		.jp-free-media a {
+			background-color: transparent;
+		}
+	}
+}
+
+.jp-playlist-item-remove {
+	display: none;
+	padding: 0;
+}
+
+@media (min-width: 480px) {
+	.jp-playlist {
+		width: @player-playlist-width;
+	}
+}

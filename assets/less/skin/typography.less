@@ -1,0 +1,57 @@
+/**
+ * Typography
+ * -----------------------------------------------------------------------------
+ */
+
+body {
+	color: @text-color;
+	font-family: @font-family-base;
+	font-size: unit( @font-size-base, px );
+	line-height: @line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: @headings-color;
+	font-family: @font-family-base;
+	font-weight: 700;
+	margin: 0;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+code {
+	font-family: @font-family-monospace;
+	hyphens: none;
+}
+
+pre {
+	background-color: @neutral-lighter;
+	border: solid @neutral;
+	border-width: 0 0 0 10px;
+	border-radius: @border-radius;
+	font-family: @font-family-monospace;
+	font-size: @font-size-small-rem;
+	hyphens: none;
+	line-height: 1.5;
+	margin-bottom: unit( @line-height-base / @font-size-small, em );
+	max-width: 100%;
+	overflow: auto;
+	padding: unit( 15 / @font-size-small, em ) unit( 20 / @font-size-small, em );
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
