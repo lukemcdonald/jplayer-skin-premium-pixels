@@ -44,11 +44,29 @@ module.exports = function(grunt) {
 			files: {
 				src: 'assets/css/style.css'
 			}
+		},
+		watch: {
+			css: {
+				options: {
+					debounceDelay: 500,
+					livereload: true
+				},
+				files: [ 'style.css' ],
+				tasks: [ 'pixrem', 'postcss' ]
+			},
+			less: {
+				files: [
+					'assets/less/*.less',
+					'assets/less/**/*.less'
+				],
+				tasks: [ 'less' ]
+			}
 		}
 	});
 
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-contrib-less' );
+	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	grunt.loadNpmTasks( 'grunt-pixrem' );
 	grunt.loadNpmTasks( 'grunt-postcss' );
 
