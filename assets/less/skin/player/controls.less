@@ -23,11 +23,11 @@
 	text-shadow: 0 1px 2px rgba(0,0,0,0.5);
 	transition: none;
 	white-space: nowrap;
-	width: unit( 34 / @font-size-base, em );
+	width: unit( (34 / @font-size-base), em );
 
 	&:before {
 		font-size: @icon-size-rem;
-		line-height: unit( @player-height / @icon-size, em );
+		line-height: unit( (@player-height / @icon-size), em );
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -45,7 +45,7 @@
 .jp-play {
 	&:before {
 		content: "\f152"; // Play
-		text-indent: unit( 3 / @font-size-base, em );
+		text-indent: unit( (3 / @font-size-base), em );
 	}
 }
 
