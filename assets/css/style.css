@@ -243,7 +243,6 @@ pre {
   border-width: 0 0 0 10px;
   border-radius: 3px;
   font-family: "Menlo", "Monaco", "Consolas", "Courier New", monospace;
-  font-size: 19px;
   font-size: 1.2rem;
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -320,7 +319,6 @@ figure {
 }
 .credits {
   color: #c0c8d6;
-  font-size: 19px;
   font-size: 1.2rem;
   padding: 1.66666667em 0;
   text-align: center;
@@ -353,7 +351,6 @@ figure {
   width: 0px;
 }
 .jp-audio {
-  font-size: 25px;
   font-size: 1.6rem;
   margin: 0 auto;
   max-width: 100%;
@@ -418,7 +415,6 @@ figure {
 }
 .jp-play:before,
 .jp-mute:before {
-  font-size: 25px;
   font-size: 1.6rem;
   line-height: 1.875em;
   position: absolute;
@@ -543,7 +539,6 @@ figure {
   background-color: #4a4c4d;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   border-radius: 0 0 3px 3px;
-  font-size: 19px;
   font-size: 1.2rem;
   margin: 0 auto;
 }
@@ -610,4 +605,3 @@ figure {
     width: 94%;
   }
 }
-

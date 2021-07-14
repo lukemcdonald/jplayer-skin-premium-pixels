@@ -26,12 +26,6 @@ module.exports = function(grunt) {
 				dest: 'assets/css/style.css'
 			}
 		},
-		pixrem: {
-			files: {
-				src: 'assets/css/style.css',
-				dest: 'assets/css/style.css'
-			}
-		},
 		postcss: {
 			options: {
 				processors: [
@@ -52,7 +46,7 @@ module.exports = function(grunt) {
 					livereload: true
 				},
 				files: [ 'style.css' ],
-				tasks: [ 'pixrem', 'postcss' ]
+				tasks: [ 'postcss' ]
 			},
 			less: {
 				files: [
@@ -67,10 +61,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-contrib-less' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
-	grunt.loadNpmTasks( 'grunt-pixrem' );
 	grunt.loadNpmTasks( 'grunt-postcss' );
 
 	grunt.registerTask( 'default', ['build'] );
-
-	grunt.registerTask( 'build', ['jshint', 'less', 'pixrem', 'postcss'] );
+	grunt.registerTask( 'build', ['jshint', 'less', 'postcss'] );
 };
