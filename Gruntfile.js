@@ -11,7 +11,6 @@ module.exports = function(grunt) {
 			build: [
 				'assets/js/*.js',
 				'!assets/js/*.min.js',
-				'!assets/js/vendor/*.js'
 			],
 			grunt: {
 				options: {

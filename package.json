@@ -7,9 +7,6 @@
   "bugs": {
     "url": "https://github.com/lukemcdonald/jplayer-premium-pixels/issues"
   },
-  "dependencies": {
-    "jquery": ">1.7.0"
-  },
   "description": "Premium Pixels jPlayer Skin",
   "devDependencies": {
     "autoprefixer": "^6.1",
