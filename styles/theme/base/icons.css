@@ -1,0 +1,20 @@
+/**
+ * Icons
+ * -----------------------------------------------------------------------------
+ */
+
+.jp-button button:before,
+.icon:before {
+	display: inline-block;
+	font-family: var(--font-family-icon);
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	letter-spacing: normal;
+	speak: none;
+	text-decoration: inherit;
+	text-transform: none;
+	vertical-align: top;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}

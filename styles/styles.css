@@ -1,0 +1,25 @@
+/**
+ * Base
+ * -----------------------------------------------------------------------------
+ */
+
+ @import 'tailwindcss/base';
+ @import 'theme/base';
+ @import 'theme/base/icons';
+
+ /**
+	* Components
+	* -----------------------------------------------------------------------------
+	*/
+
+ @import 'tailwindcss/components';
+ @import 'theme/components/player';
+ @import 'theme/components/player/interface';
+ @import 'theme/components/player/playlist';
+
+ /**
+	* Utilites
+	* -----------------------------------------------------------------------------
+	*/
+
+ @import 'tailwindcss/utilities';

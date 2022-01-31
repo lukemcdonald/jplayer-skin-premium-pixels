@@ -1,0 +1,33 @@
+ body {
+  @apply overflow-x-hidden font-sans;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+	@apply bg-gray-100;
+}
+
+.demo {
+	@apply pt-6
+}
+
+.credits {
+	@apply text-gray-500 text-xs py-5 text-center;
+
+	p {
+		@apply mb-0
+	}
+
+	a {
+		@apply text-current no-underline hover:underline;
+	}
+}
+
+@media (min-width: 480px) {
+	.demo {
+		@apply pt-40;
+	}
+}
