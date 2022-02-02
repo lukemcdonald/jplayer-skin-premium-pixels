@@ -3,15 +3,15 @@
  * -----------------------------------------------------------------------------
  */
 
- /*! tailwindcss v3.0.18 | MIT License | https://tailwindcss.com
+/*! tailwindcss v3.0.18 | MIT License | https://tailwindcss.com
  */
 
- /*
+/*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
- *,
+*,
 ::before,
 ::after {
   box-sizing: border-box; /* 1 */
@@ -20,19 +20,19 @@
   border-color: #e4e4e7; /* 2 */
 }
 
- ::before,
+::before,
 ::after {
   --tw-content: '';
 }
 
- /*
+/*
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 */
 
- html {
+html {
   line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -moz-tab-size: 4; /* 3 */
@@ -41,42 +41,42 @@
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
 }
 
- /*
+/*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
 
- body {
+body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
 }
 
- /*
+/*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 3. Ensure horizontal rules are visible by default.
 */
 
- hr {
+hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
   border-top-width: 1px; /* 3 */
 }
 
- /*
+/*
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
- abbr:where([title]) {
+abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
 
- /*
+/*
 Remove the default font size and weight for headings.
 */
 
- h1,
+h1,
 h2,
 h3,
 h4,
@@ -86,30 +86,30 @@ h6 {
   font-weight: inherit;
 }
 
- /*
+/*
 Reset links to optimize for opt-in styling instead of opt-out.
 */
 
- a {
+a {
   color: inherit;
   text-decoration: inherit;
 }
 
- /*
+/*
 Add the correct font weight in Edge and Safari.
 */
 
- b,
+b,
 strong {
   font-weight: bolder;
 }
 
- /*
+/*
 1. Use the user's configured `mono` font family by default.
 2. Correct the odd `em` font sizing in all browsers.
 */
 
- code,
+code,
 kbd,
 samp,
 pre {
@@ -117,19 +117,19 @@ pre {
   font-size: 1em; /* 2 */
 }
 
- /*
+/*
 Add the correct font size in all browsers.
 */
 
- small {
+small {
   font-size: 80%;
 }
 
- /*
+/*
 Prevent `sub` and `sup` elements from affecting the line height in all browsers.
 */
 
- sub,
+sub,
 sup {
   font-size: 75%;
   line-height: 0;
@@ -137,33 +137,33 @@ sup {
   vertical-align: baseline;
 }
 
- sub {
+sub {
   bottom: -0.25em;
 }
 
- sup {
+sup {
   top: -0.5em;
 }
 
- /*
+/*
 1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 3. Remove gaps between table borders by default.
 */
 
- table {
+table {
   text-indent: 0; /* 1 */
   border-color: inherit; /* 2 */
   border-collapse: collapse; /* 3 */
 }
 
- /*
+/*
 1. Change the font styles in all browsers.
 2. Remove the margin in Firefox and Safari.
 3. Remove default padding in all browsers.
 */
 
- button,
+button,
 input,
 optgroup,
 select,
@@ -176,21 +176,21 @@ textarea {
   padding: 0; /* 3 */
 }
 
- /*
+/*
 Remove the inheritance of text transform in Edge and Firefox.
 */
 
- button,
+button,
 select {
   text-transform: none;
 }
 
- /*
+/*
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Remove default button styles.
 */
 
- button,
+button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
@@ -199,80 +199,80 @@ select {
   background-image: none; /* 2 */
 }
 
- /*
+/*
 Use the modern Firefox focus style for all focusable elements.
 */
 
- :-moz-focusring {
+:-moz-focusring {
   outline: auto;
 }
 
- /*
+/*
 Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
 */
 
- :-moz-ui-invalid {
+:-moz-ui-invalid {
   box-shadow: none;
 }
 
- /*
+/*
 Add the correct vertical alignment in Chrome and Firefox.
 */
 
- progress {
+progress {
   vertical-align: baseline;
 }
 
- /*
+/*
 Correct the cursor style of increment and decrement buttons in Safari.
 */
 
- ::-webkit-inner-spin-button,
+::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
 }
 
- /*
+/*
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
 
- [type='search'] {
+[type='search'] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
- /*
+/*
 Remove the inner padding in Chrome and Safari on macOS.
 */
 
- ::-webkit-search-decoration {
+::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
- /*
+/*
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Change font properties to `inherit` in Safari.
 */
 
- ::-webkit-file-upload-button {
+::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
 
- /*
+/*
 Add the correct display in Chrome and Safari.
 */
 
- summary {
+summary {
   display: list-item;
 }
 
- /*
+/*
 Removes the default spacing and border for appropriate elements.
 */
 
- blockquote,
+blockquote,
 dl,
 dd,
 h1,
@@ -288,16 +288,16 @@ pre {
   margin: 0;
 }
 
- fieldset {
+fieldset {
   margin: 0;
   padding: 0;
 }
 
- legend {
+legend {
   padding: 0;
 }
 
- ol,
+ol,
 ul,
 menu {
   list-style: none;
@@ -305,59 +305,59 @@ menu {
   padding: 0;
 }
 
- /*
+/*
 Prevent resizing textareas horizontally by default.
 */
 
- textarea {
+textarea {
   resize: vertical;
 }
 
- /*
+/*
 1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
- input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1; /* 1 */
   color: #a1a1aa; /* 2 */
 }
 
- input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   opacity: 1; /* 1 */
   color: #a1a1aa; /* 2 */
 }
 
- input::placeholder,
+input::placeholder,
 textarea::placeholder {
   opacity: 1; /* 1 */
   color: #a1a1aa; /* 2 */
 }
 
- /*
+/*
 Set the default cursor for buttons.
 */
 
- button,
+button,
 [role="button"] {
   cursor: pointer;
 }
 
- /*
+/*
 Make sure disabled buttons don't get the pointer cursor.
 */
 
- :disabled {
+:disabled {
   cursor: default;
 }
 
- /*
+/*
 1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
 2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
    This can trigger a poorly considered lint error in some tools but is included by design.
 */
 
- img,
+img,
 svg,
 video,
 canvas,
@@ -369,25 +369,25 @@ object {
   vertical-align: middle; /* 2 */
 }
 
- /*
+/*
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
 
- img,
+img,
 video {
   max-width: 100%;
   height: auto;
 }
 
- /*
+/*
 Ensure the default browser behavior of the `hidden` attribute.
 */
 
- [hidden] {
+[hidden] {
   display: none;
 }
 
- *, ::before, ::after {
+*, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -432,25 +432,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
- body {
+body {
   overflow-x: hidden;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
- * {
+* {
   -webkit-tap-highlight-color: transparent;
 }
 
- body {
+body {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
 
- .demo {
+.demo {
   padding-top: 1.5rem;
 }
 
- .credits {
+.credits {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   text-align: center;
@@ -460,59 +460,58 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(113 113 122 / var(--tw-text-opacity));
 }
 
- .credits p {
+.credits p {
   margin-bottom: 0px;
 }
 
- .credits a {
+.credits a {
   color: currentColor;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
 
- .credits a:hover {
+.credits a:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
- @media (min-width: 480px) {
-	.demo {
+@media (min-width: 480px) {
+  .demo {
     padding-top: 10rem;
   }
 }
 
- /**
+/**
  * Icons
  * -----------------------------------------------------------------------------
  */
 
- .jp-button button:before,
+.jp-button button:before,
 .icon:before {
-	display: inline-block;
-	font-family: var(--font-family-icon);
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	letter-spacing: normal;
-	speak: none;
-	text-decoration: inherit;
-	text-transform: none;
-	vertical-align: top;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-family: var(--font-family-icon);
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  letter-spacing: normal;
+  text-decoration: inherit;
+  text-transform: none;
+  vertical-align: top;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
- /**
+/**
 	* Components
 	* -----------------------------------------------------------------------------
 	*/
 
- .jp-jplayer {
+.jp-jplayer {
   height: 0px;
   width: 0px;
 }
 
- .jp-audio {
+.jp-audio {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
@@ -522,22 +521,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
 }
 
- .jp-audio a {
+.jp-audio a {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
 
- @media (min-width: 480px) {
-	.jp-audio {
+@media (min-width: 480px) {
+  .jp-audio {
     max-width: 28rem;
   }
 
-	.jp-interface {
+  .jp-interface {
     border-radius: 0.25rem;
   }
 }
 
- .jp-interface {
+.jp-interface {
   position: relative;
   display: flex;
   height: 2rem;
@@ -553,7 +552,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
- .jp-interface > div {
+.jp-interface > div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -562,13 +561,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.75rem;
 }
 
- /* Buttons */
+/* Buttons */
 
- .jp-playpause-button {
+.jp-playpause-button {
   padding: 0px !important;
 }
 
- .jp-play, .jp-mute {
+.jp-play, .jp-mute {
   position: relative;
   margin: 0px;
   display: block;
@@ -586,56 +585,56 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-property: none;
 }
 
- .jp-play:hover, .jp-mute:hover {
+.jp-play:hover, .jp-mute:hover {
   --tw-text-opacity: 1;
   color: rgb(250 250 250 / var(--tw-text-opacity));
 }
 
- .jp-play > span, .jp-mute > span {
+.jp-play > span, .jp-mute > span {
   display: none;
 }
 
- .jp-play svg {
+.jp-play svg {
   margin-top: -1px;
   margin-left: -1px;
   height: 2.25rem;
   width: 2.25rem;
 }
 
- .jp-mute svg {
+.jp-mute svg {
   height: 1rem;
   width: 1rem;
 }
 
- .svg-pause, .svg-volume-off {
+.svg-pause, .svg-volume-off {
   display: none;
 }
 
- .jp-state-playing .svg-play {
+.jp-state-playing .svg-play {
   display: none;
 }
 
- .jp-state-playing .svg-pause {
+.jp-state-playing .svg-pause {
   display: block;
 }
 
- .jp-state-muted .svg-volume-on {
+.jp-state-muted .svg-volume-on {
   display: none;
 }
 
- .jp-state-muted .svg-volume-off {
+.jp-state-muted .svg-volume-off {
   display: block;
 }
 
- /* Volume */
+/* Volume */
 
- .jp-volume-bar {
+.jp-volume-bar {
   position: relative;
   width: 2.5rem;
   cursor: pointer;
 }
 
- .jp-volume-bar, .jp-progress {
+.jp-volume-bar, .jp-progress {
   display: flex;
   height: 0.5rem;
   flex-grow: 1;
@@ -649,11 +648,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
- .jp-volume-bar-value {
+.jp-volume-bar-value {
   border-radius: 0.125rem;
 }
 
- .jp-time-rail {
+.jp-time-rail {
   position: relative;
   flex-grow: 1;
   border-left-width: 1px;
@@ -666,37 +665,37 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.75rem;
 }
 
- .jp-time-rail:before,
-	.jp-time-rail:after {
-		content: ' ';
-		position: absolute;
-		top: 0px;
-		bottom: 0px;
-		border-left-width: 1px;
-		border-style: solid;
-	}
+.jp-time-rail:before,
+  .jp-time-rail:after {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    border-left-width: 1px;
+    border-style: solid;
+  }
 
- .jp-time-rail:before {
+.jp-time-rail:before {
   right: 100%;
   margin-right: 1px;
   --tw-border-opacity: 1;
   border-left-color: rgb(39 39 42 / var(--tw-border-opacity));
 }
 
- .jp-time-rail:after {
+.jp-time-rail:after {
   left: 100%;
   margin-left: 1px;
   --tw-border-opacity: 1;
   border-left-color: rgb(63 63 70 / var(--tw-border-opacity));
 }
 
- .jp-seek-bar, .jp-play-bar {
+.jp-seek-bar, .jp-play-bar {
   display: flex;
   width: 0px;
   border-radius: 0.125rem;
 }
 
- .jp-volume-bar, .jp-seek-bar {
+.jp-volume-bar, .jp-seek-bar {
   position: relative;
   cursor: pointer;
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -705,7 +704,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #52525b;
 }
 
- .jp-volume-bar-value, .jp-play-bar {
+.jp-volume-bar-value, .jp-play-bar {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
   --tw-gradient-from: #eab308;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(234 179 8 / 0));
@@ -715,7 +714,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
- .jp-playlist {
+.jp-playlist {
   margin-left: auto;
   margin-right: auto;
   width: 91.666667%;
@@ -732,11 +731,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
- .jp-playlist a {
+.jp-playlist a {
   color: currentColor;
 }
 
- .jp-playlist ul {
+.jp-playlist ul {
   margin: 0px;
   width: 100%;
   list-style-type: none;
@@ -746,7 +745,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
- .jp-playlist li {
+.jp-playlist li {
   width: 100%;
   border-bottom-width: 1px;
   border-top-width: 1px;
@@ -756,30 +755,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-color: rgb(39 39 42 / var(--tw-border-opacity));
 }
 
- .jp-playlist li:hover {
+.jp-playlist li:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
- .jp-playlist li:first-child {
+.jp-playlist li:first-child {
   border-top-color: transparent;
 }
 
- .jp-playlist li:first-child:hover {
+.jp-playlist li:first-child:hover {
   --tw-border-opacity: 1;
   border-top-color: rgb(24 24 27 / var(--tw-border-opacity));
 }
 
- .jp-playlist li:last-child {
+.jp-playlist li:last-child {
   border-bottom-width: 0px;
 }
 
- .jp-playlist li > div {
+.jp-playlist li > div {
   display: flex;
   justify-content: space-between;
 }
 
- .jp-playlist-item {
+.jp-playlist-item {
   flex-grow: 1;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -787,11 +786,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.75rem;
 }
 
- .jp-free-media, .jp-playlist-item-remove {
+.jp-free-media, .jp-playlist-item-remove {
   order: 1;
 }
 
- .jp-free-media {
+.jp-free-media {
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -803,27 +802,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(113 113 122 / var(--tw-text-opacity));
 }
 
- .jp-state-playing .jp-playlist-current {
-		border-top-color: rgba(0,0,0,0.35);
-	}
+.jp-state-playing .jp-playlist-current {
+    border-top-color: rgba(0, 0, 0, 0.35);
+  }
 
- .jp-state-playing .jp-playlist-current a {
+.jp-state-playing .jp-playlist-current a {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-			text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
- .jp-state-playing .jp-playlist-current .jp-free-media a {
+.jp-state-playing .jp-playlist-current .jp-free-media a {
   background-color: transparent;
 }
 
- .jp-free-media, .jp-playlist-item-remove {
+.jp-free-media, .jp-playlist-item-remove {
   display: none;
 }
 
- /**
+/**
 	* Utilites
 	* -----------------------------------------------------------------------------
 	*/

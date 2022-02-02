@@ -1,116 +1,122 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Pixels jPlayer Skin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="shortcut icon" href="./assets/media/favicon.svg" type="image/svg+xml" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Premium Pixels jPlayer Skin</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-	<link rel="stylesheet" href="assets/css/styles.css" />
-</head>
+  <body>
+    <div id="page" class="demo">
+      <div class="demo-player">
+        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
 
-<body>
-	<div id="page" class="demo">
-		<div class='demo-player'>
+        <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+          <div class="jp-interface">
+            <div class="jp-button jp-playpause-button">
+              <button class="jp-play" role="button" tabindex="0">
+                <span>Play/Pause</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-play" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="svg-pause"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9" />
+                </svg>
+              </button>
+            </div>
 
-			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+            <div class="jp-time-rail">
+              <div class="jp-progress">
+                <div class="jp-seek-bar">
+                  <div class="jp-play-bar"></div>
+                </div>
+              </div>
+            </div>
 
-			<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
-				<div class="jp-interface">
-					<div class="jp-button jp-playpause-button">
-						<button class="jp-play" role="button" tabindex="0">
-							<span>Play/Pause</span>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="svg-play"
-								viewBox="0 0 24 24"
-							>
-								<path
-									fill="currentColor"
-									d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-								/>
-							</svg>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="svg-pause"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M10 9v6m4-6v6m7-3a9"
-								/>
-							</svg>
-						</button>
-					</div>
+            <div>
+              <div class="jp-button jp-volume-button">
+                <button class="jp-mute" role="button" tabindex="0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="svg-volume-on" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      fill-rule="evenodd"
+                      d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="svg-volume-off"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
 
-					<div class="jp-time-rail">
-						<div class="jp-progress">
-							<div class="jp-seek-bar">
-								<div class="jp-play-bar"></div>
-							</div>
-						</div>
-					</div>
+              <div class="jp-volume-bar">
+                <div class="jp-volume-bar-value"></div>
+              </div>
+            </div>
+          </div>
 
-					<div>
-					<div class="jp-button jp-volume-button">
-						<button class="jp-mute" role="button" tabindex="0">
-							<svg xmlns="http://www.w3.org/2000/svg" class="svg-volume-on" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
-							</svg>
-							<svg xmlns="http://www.w3.org/2000/svg" class="svg-volume-off" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-							</svg>
-						</button>
-					</div>
+          <div class="jp-playlist">
+            <ul>
+              <li>&nbsp;</li>
+            </ul>
+          </div>
 
-					<div class="jp-volume-bar">
-						<div class="jp-volume-bar-value"></div>
-					</div>
-				</div>
-				</div>
+          <div class="jp-no-solution">
+            <span>Update Required</span>
+            <p>
+              To play the media you will need to either update your browser to a recent version or update your
+              <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+            </p>
+          </div>
+        </div>
+        <!-- .jp-audio -->
+      </div>
+      <!-- .demo-player -->
 
-				<div class="jp-playlist">
-					<ul>
-						<li>&nbsp;</li>
-					</ul>
-				</div>
+      <div class="credits">
+        <p>
+          Designed by <a href="https://twitter.com/ormanclark">Orman Clark</a> |
+          <a href="https://www.premiumpixels.com/freebies/custom-audio-player-skin-psd/">Download PSD</a>
+        </p>
 
-				<div class="jp-no-solution">
-					<span>Update Required</span>
-					To play the media you will need to either update your browser to a recent version or update your <a
-						href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-				</div>
-			</div><!-- .jp-audio -->
+        <p>
+          Developed by <a href="https://lukemcdonald.com/">Luke McDonald</a> |
+          <a href="https://github.com/lukemcdonald">Follow on Github</a>
+        </p>
+      </div>
+    </div>
+    <!-- .demo -->
 
-		</div><!-- .demo-player -->
-
-		<div class="credits">
-			<p>Designed by <a href="https://twitter.com/ormanclark">Orman Clark</a> | <a
-					href="https://www.premiumpixels.com/freebies/custom-audio-player-skin-psd/">Download PSD</a></p>
-
-			<p>Developed by <a href="https://lukemcdonald.com/">Luke McDonald</a> | <a
-					href="https://github.com/lukemcdonald">Follow on Github</a></p>
-		</div>
-
-	</div><!-- .demo -->
-
-	<script
-		type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-	></script>
-	<script
-		type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js"
-	></script>
-	<script
-		type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/add-on/jplayer.playlist.min.js"
-	></script>
-	<script type="module" src="assets/js/jplayer.js"></script>
-</body>
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/add-on/jplayer.playlist.min.js"
+    ></script>
+    <script type="module" src="./assets/js/jplayer.js"></script>
+  </body>
 </html>
