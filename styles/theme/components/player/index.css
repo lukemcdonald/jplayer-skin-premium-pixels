@@ -1,21 +1,21 @@
 .jp-jplayer {
-	@apply w-0 h-0;
+  @apply h-0 w-0;
 }
 
 .jp-audio {
-	@apply text-base mx-auto max-w-full px-6;
+  @apply mx-auto max-w-full px-6 text-base;
 
-	a {
-		@apply no-underline;
-	}
+  a {
+    @apply no-underline;
+  }
 }
 
 @media (min-width: 480px) {
-	.jp-audio {
-		@apply max-w-md;
-	}
+  .jp-audio {
+    @apply max-w-md;
+  }
 
-	.jp-interface {
-		@apply rounded;
-	}
+  .jp-interface {
+    @apply rounded;
+  }
 }
