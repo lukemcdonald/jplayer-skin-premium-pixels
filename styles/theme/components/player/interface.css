@@ -1,106 +1,105 @@
-
 .jp-interface {
-	@apply rounded-t h-8 relative w-full bg-gradient-to-b from-gray-600 to-gray-800 flex shadow-md;
+  @apply relative flex h-8 w-full rounded-t bg-gradient-to-b from-gray-600 to-gray-800 shadow-md;
 
-	> div {
-		@apply flex items-center justify-center px-3 gap-3;
-	}
+  > div {
+    @apply flex items-center justify-center gap-3 px-3;
+  }
 }
 
 /* Buttons */
 .jp-playpause-button {
-	@apply p-0 !important;
+  @apply p-0 !important;
 }
 
 .jp-play,
 .jp-mute {
-	@apply whitespace-nowrap transition-none relative p-0 overflow-hidden outline-none m-0 block cursor-pointer text-gray-300 rounded-none border-none bg-transparent hover:text-gray-50;
+  @apply relative m-0 block cursor-pointer overflow-hidden whitespace-nowrap rounded-none border-none bg-transparent p-0 text-gray-300 outline-none transition-none hover:text-gray-50;
 
-	> span {
-		@apply hidden;
-	}
+  > span {
+    @apply hidden;
+  }
 }
 
 .jp-play {
-	svg {
-		@apply w-9 h-9 -mt-px -ml-px;
-	}
+  svg {
+    @apply -mt-px -ml-px h-9 w-9;
+  }
 }
 
 .jp-mute {
-	svg {
-		@apply w-4 h-4;
-	}
+  svg {
+    @apply h-4 w-4;
+  }
 }
 
 .svg-pause,
 .svg-volume-off {
-	@apply hidden;
+  @apply hidden;
 }
 
 .jp-state-playing {
-	.svg-play {
-		@apply hidden;
-	}
+  .svg-play {
+    @apply hidden;
+  }
 
-	.svg-pause {
-		@apply block;
-	}
+  .svg-pause {
+    @apply block;
+  }
 }
 
 .jp-state-muted {
-	.svg-volume-on {
-		@apply hidden;
-	}
+  .svg-volume-on {
+    @apply hidden;
+  }
 
-	.svg-volume-off {
-		@apply block;
-	}
+  .svg-volume-off {
+    @apply block;
+  }
 }
 
 /* Volume */
 .jp-volume-bar {
-	@apply cursor-pointer w-10 relative;
+  @apply relative w-10 cursor-pointer;
 }
 
 .jp-volume-bar,
 .jp-progress {
-	@apply h-2 rounded-sm border border-solid border-gray-800 flex flex-grow shadow-sm;
+  @apply flex h-2 flex-grow rounded-sm border border-solid border-gray-800 shadow-sm;
 }
 
 .jp-volume-bar-value {
-	@apply rounded-sm;
+  @apply rounded-sm;
 }
 
 .jp-time-rail {
-	@apply border-l border-r border-solid relative border-l-gray-700 border-r-gray-800 flex-grow px-3;
+  @apply relative flex-grow border-l border-r border-solid border-l-gray-700 border-r-gray-800 px-3;
 
-	&:before,
-	&:after {
-		content: ' ';
-		@apply absolute top-0 bottom-0 border-l border-solid;
-	}
+  &:before,
+  &:after {
+    content: ' ';
+    @apply absolute top-0 bottom-0 border-l border-solid;
+  }
 
-	&:before {
-		@apply mr-px right-full border-l-gray-800;
-	}
+  &:before {
+    @apply right-full mr-px border-l-gray-800;
+  }
 
-	&:after {
-		@apply ml-px left-full border-l-gray-700;
-	}
+  &:after {
+    @apply left-full ml-px border-l-gray-700;
+  }
 }
 
 .jp-seek-bar,
 .jp-play-bar {
-	@apply w-0 rounded-sm flex;
+  @apply flex w-0 rounded-sm;
 }
 
 .jp-volume-bar,
 .jp-seek-bar {
-	@apply relative cursor-pointer bg-gradient-to-b from-gray-700 to-gray-600;
+  @apply relative cursor-pointer bg-gradient-to-b from-gray-700 to-gray-600;
 }
 
 .jp-volume-bar-value,
 .jp-play-bar {
-	@apply shadow-sm bg-gradient-to-b from-primary-500 to-primary-300;
+  @apply bg-gradient-to-b from-primary-500 to-primary-300 shadow-sm;
 }

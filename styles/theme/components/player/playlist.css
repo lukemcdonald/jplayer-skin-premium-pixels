@@ -1,61 +1,60 @@
 .jp-playlist {
-	@apply mx-auto text-xs rounded-b bg-gray-700 w-11/12 shadow-md text-gray-200;
+  @apply mx-auto w-11/12 rounded-b bg-gray-700 text-xs text-gray-200 shadow-md;
 
-	a {
-		@apply text-current;
-	}
+  a {
+    @apply text-current;
+  }
 
-	ul {
-		@apply w-full p-0 m-0 list-none shadow;
-	}
+  ul {
+    @apply m-0 w-full list-none p-0 shadow;
+  }
 
-	li {
-		@apply w-full border-b border-t border-solid border-t-gray-600 border-b-gray-800 hover:bg-gray-800;
+  li {
+    @apply w-full border-b border-t border-solid border-t-gray-600 border-b-gray-800 hover:bg-gray-800;
 
-		&:first-child {
-			@apply border-t-transparent hover:border-t-gray-900;
-		}
+    &:first-child {
+      @apply border-t-transparent hover:border-t-gray-900;
+    }
 
-		&:last-child {
-			@apply border-b-0;
-		}
+    &:last-child {
+      @apply border-b-0;
+    }
 
-		> div {
-			@apply flex justify-between;
-		}
-	}
+    > div {
+      @apply flex justify-between;
+    }
+  }
 }
 
 .jp-playlist-item {
-	@apply flex-grow py-2 px-3;
+  @apply flex-grow py-2 px-3;
 }
 
 .jp-free-media,
 .jp-playlist-item-remove {
-	@apply order-1;
+  @apply order-1;
 }
 
 .jp-free-media {
-	@apply leading-8 tracking-wider text-xs flex items-center gap-1 text-gray-500 uppercase;
+  @apply flex items-center gap-1 text-xs uppercase leading-8 tracking-wider text-gray-500;
 }
 
 .jp-state-playing {
-	.jp-playlist-current {
-		border-top-color: rgba(0,0,0,0.35);
+  .jp-playlist-current {
+    border-top-color: rgba(0, 0, 0, 0.35);
 
-		a {
-			@apply text-white bg-black bg-opacity-20;
-			text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-		}
+    a {
+      @apply bg-black bg-opacity-20 text-white;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
 
-		.jp-free-media a {
-			@apply bg-transparent;
-		}
-	}
+    .jp-free-media a {
+      @apply bg-transparent;
+    }
+  }
 }
-
 
 .jp-free-media,
 .jp-playlist-item-remove {
-	@apply hidden;
+  @apply hidden;
 }

@@ -1,4 +1,4 @@
- body {
+body {
   @apply overflow-x-hidden font-sans;
 }
 
@@ -7,27 +7,27 @@
 }
 
 body {
-	@apply bg-gray-100;
+  @apply bg-gray-100;
 }
 
 .demo {
-	@apply pt-6
+  @apply pt-6;
 }
 
 .credits {
-	@apply text-gray-500 text-xs py-5 text-center;
+  @apply py-5 text-center text-xs text-gray-500;
 
-	p {
-		@apply mb-0
-	}
+  p {
+    @apply mb-0;
+  }
 
-	a {
-		@apply text-current no-underline hover:underline;
-	}
+  a {
+    @apply text-current no-underline hover:underline;
+  }
 }
 
 @media (min-width: 480px) {
-	.demo {
-		@apply pt-40;
-	}
+  .demo {
+    @apply pt-40;
+  }
 }

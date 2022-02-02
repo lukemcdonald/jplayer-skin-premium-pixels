@@ -2,14 +2,14 @@
 
 A responsive HTML5 jPlayer skin with playlist.
 
-__Contributors:__ [Luke McDonald](https://lukemcdonald.com)
-__Requires:__ [jPlayer](http://jplayer.org)
-__License:__ [MIT license](https://opensource.org/licenses/MIT)
+**Contributors:** [Luke McDonald](https://lukemcdonald.com)
+**Requires:** [jPlayer](http://jplayer.org)
+**License:** [MIT license](https://opensource.org/licenses/MIT)
 
 Inspired by the Premium Pixels audio player skin designed by Orman Clark.
 
-* [PSD](https://www.premiumpixels.com/freebies/custom-audio-player-skin-psd/)
-* [Demo](http://lukemcdonald.github.io/jplayer-skin-premium-pixels/)
+- [PSD](https://www.premiumpixels.com/freebies/custom-audio-player-skin-psd/)
+- [Demo](http://lukemcdonald.github.io/jplayer-skin-premium-pixels/)
 
 ![Premium Pixels jPlayer Skin](screenshot-1.jpg)
 
