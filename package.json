@@ -20,7 +20,8 @@
     "dev:css": "postcss styles/styles.css -o src/assets/css/styles.css --watch",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d src"
+    "deploy": "gh-pages -d src",
+    "start": "npm run dev"
   },
   "dependencies": {
     "gh-pages": "^3.2.3",
