@@ -3,7 +3,7 @@
  * -----------------------------------------------------------------------------
  */
 
-/*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
+/*! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
  */
 
 /*
@@ -30,6 +30,7 @@
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
 */
 
 html {
@@ -39,6 +40,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
 }
 
 /*
@@ -170,6 +172,7 @@ select,
 textarea {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
   line-height: inherit; /* 1 */
   color: inherit; /* 1 */
   margin: 0; /* 2 */
@@ -323,11 +326,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   color: #a1a1aa; /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1; /* 1 */
-  color: #a1a1aa; /* 2 */
-}
-
 input::placeholder,
 textarea::placeholder {
   opacity: 1; /* 1 */
@@ -379,15 +377,62 @@ video {
   height: auto;
 }
 
-/*
-Ensure the default browser behavior of the `hidden` attribute.
-*/
+/* Make elements with the HTML hidden attribute stay hidden by default */
 
 [hidden] {
   display: none;
 }
 
 *, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -466,13 +511,11 @@ body {
 
 .credits a {
   color: currentColor;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
 }
 
 .credits a:hover {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 @media (min-width: 480px) {
@@ -522,8 +565,7 @@ body {
 }
 
 .jp-audio a {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
 }
 
 @media (min-width: 480px) {
@@ -545,7 +587,8 @@ body {
   border-top-right-radius: 0.25rem;
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
   --tw-gradient-from: #52525b;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(82 82 91 / 0));
+  --tw-gradient-to: rgb(82 82 91 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: #27272a;
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -567,7 +610,8 @@ body {
   padding: 0px !important;
 }
 
-.jp-play, .jp-mute {
+.jp-play,
+.jp-mute {
   position: relative;
   margin: 0px;
   display: block;
@@ -585,7 +629,8 @@ body {
   transition-property: none;
 }
 
-.jp-play:hover, .jp-mute:hover {
+.jp-play:hover,
+.jp-mute:hover {
   --tw-text-opacity: 1;
   color: rgb(250 250 250 / var(--tw-text-opacity));
 }
@@ -606,7 +651,8 @@ body {
   width: 1rem;
 }
 
-.svg-pause, .svg-volume-off {
+.svg-pause,
+.svg-volume-off {
   display: none;
 }
 
@@ -634,7 +680,8 @@ body {
   cursor: pointer;
 }
 
-.jp-volume-bar, .jp-progress {
+.jp-volume-bar,
+.jp-progress {
   display: flex;
   height: 0.5rem;
   flex-grow: 1;
@@ -689,25 +736,30 @@ body {
   border-left-color: rgb(63 63 70 / var(--tw-border-opacity));
 }
 
-.jp-seek-bar, .jp-play-bar {
+.jp-seek-bar,
+.jp-play-bar {
   display: flex;
   width: 0px;
   border-radius: 0.125rem;
 }
 
-.jp-volume-bar, .jp-seek-bar {
+.jp-volume-bar,
+.jp-seek-bar {
   position: relative;
   cursor: pointer;
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
   --tw-gradient-from: #3f3f46;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(63 63 70 / 0));
+  --tw-gradient-to: rgb(63 63 70 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: #52525b;
 }
 
-.jp-volume-bar-value, .jp-play-bar {
+.jp-volume-bar-value,
+.jp-play-bar {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
   --tw-gradient-from: #eab308;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(234 179 8 / 0));
+  --tw-gradient-to: rgb(234 179 8 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: #fde047;
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -786,7 +838,8 @@ body {
   padding-right: 0.75rem;
 }
 
-.jp-free-media, .jp-playlist-item-remove {
+.jp-free-media,
+.jp-playlist-item-remove {
   order: 1;
 }
 
@@ -818,7 +871,8 @@ body {
   background-color: transparent;
 }
 
-.jp-free-media, .jp-playlist-item-remove {
+.jp-free-media,
+.jp-playlist-item-remove {
   display: none;
 }
 
