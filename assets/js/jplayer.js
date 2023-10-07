@@ -8,7 +8,6 @@ jQuery.extend(demo, {
   /**
    * Initialize the jPlayer and playlist.
    */
-
   setupPlayer: () => {
     jPlaylist = new jPlayerPlaylist(
       {
@@ -23,7 +22,7 @@ jQuery.extend(demo, {
         useStateClassSkin: true,
         autoBlur: false,
         keyEnabled: true,
-      }
+      },
     )
   },
 })
