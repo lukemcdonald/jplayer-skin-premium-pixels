@@ -16,11 +16,12 @@
   "scripts": {
     "build": "npm run build:css && vite build",
     "build:css": "postcss styles/styles.css -o src/assets/css/styles.css",
+    "deploy": "gh-pages -d src",
     "dev": "concurrently \"npm run dev:css\" \"vite\"",
     "dev:css": "postcss styles/styles.css -o src/assets/css/styles.css --watch",
-    "preview": "vite preview",
+    "format": "prettier --write \"./**/*.{js,jsx,html,md}\"",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d src",
+    "preview": "vite preview",
     "start": "npm run dev"
   },
   "dependencies": {
