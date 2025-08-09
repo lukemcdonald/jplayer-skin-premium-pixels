@@ -1,5 +1,6 @@
 {
-  "version": "2.1.0",
+  "version": "3.0.0",
+  "type": "module",
   "name": "jplayer-premium-pixels",
   "description": "Premium Pixels jPlayer Skin",
   "author": "Luke McDonald (https://lukemcdonald.com/)",
@@ -14,32 +15,26 @@
     "url": "https://github.com/lukemcdonald/jplayer-premium-pixels/issues"
   },
   "scripts": {
-    "build": "npm run build:css && vite build",
-    "build:css": "postcss styles/styles.css -o src/assets/css/styles.css",
-    "deploy": "gh-pages -d src",
-    "dev": "concurrently \"npm run dev:css\" \"vite\"",
-    "dev:css": "postcss styles/styles.css -o src/assets/css/styles.css --watch",
-    "format": "prettier --write \"./**/*.{js,jsx,html,md}\"",
+    "build": "vite build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
+    "format": "prettier --write src/**/*.{js,css,html}",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
     "predeploy": "npm run build",
     "preview": "vite preview",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "style": "npm run lint:fix && npm run format"
   },
   "dependencies": {
-    "gh-pages": "^6.1.1",
-    "postcss-import": "^16.1.0"
+    "@tailwindcss/vite": "^4.1.11",
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.13",
-    "autoprefixer": "^10.4.20",
-    "concurrently": "^8.2.2",
-    "eslint": "^9.8.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "postcss": "^8.4.40",
-    "postcss-cli": "^11.0.0",
-    "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.5",
-    "tailwindcss": "^3.4.7",
-    "vite": "^5.3.5"
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "vite": "^7.0.6"
   }
 }
