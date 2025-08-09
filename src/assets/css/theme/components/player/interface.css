@@ -8,7 +8,7 @@
 
 /* Buttons */
 .jp-playpause-button {
-  @apply p-0 !important;
+  @apply p-0;
 }
 
 .jp-play,
