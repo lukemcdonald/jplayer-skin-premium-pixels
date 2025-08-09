@@ -32,8 +32,7 @@
   --color-primary-950: #451a03;
 }
 
-@import './theme/base/index.css';
-@import './theme/base/icons.css';
-@import './theme/components/player/index.css';
-@import './theme/components/player/interface.css';
-@import './theme/components/player/playlist.css';
+@import './base.css';
+@import './player/index.css';
+@import './player/interface.css';
+@import './player/playlist.css';
