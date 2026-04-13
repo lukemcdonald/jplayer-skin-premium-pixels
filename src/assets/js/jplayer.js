@@ -1,15 +1,16 @@
-import playlist from './playlist.js';
-import swfFile from '../media/jquery.jplayer.swf?url';
+import playlist from "./playlist.js";
+import swfFile from "../media/jquery.jplayer.swf?url";
 
 class JPlayerManager {
+  jPlaylist = null;
+  isInitialized = false;
+
   constructor() {
-    this.jPlaylist = null;
-    this.isInitialized = false;
     this.elements = {
       artist: null,
       poster: null,
       record: null,
-      title: null
+      title: null,
     };
   }
 
@@ -21,41 +22,41 @@ class JPlayerManager {
 
   setupElements() {
     this.elements = {
-      artist: document.querySelector('.track-artist'),
-      poster: document.querySelector('.track-poster img'),
-      record: document.querySelector('.track-record'),
-      title: document.querySelector('.track-title')
+      artist: document.querySelector(".track-artist"),
+      poster: document.querySelector(".track-poster img"),
+      record: document.querySelector(".track-record"),
+      title: document.querySelector(".track-title"),
     };
   }
 
   setupPlayer() {
-    if (typeof jPlayerPlaylist === 'undefined') {
+    if (typeof jPlayerPlaylist === "undefined") {
       return;
     }
 
     this.jPlaylist = new jPlayerPlaylist(
       {
-        jPlayer: '#jquery_jplayer_1',
-        cssSelectorAncestor: '#jp_container_1'
+        cssSelectorAncestor: "#jp_container_1",
+        jPlayer: "#jquery_jplayer_1",
       },
       playlist,
       {
         autoBlur: false,
-        keyEnabled: true,
-        supplied: 'oga, mp3',
-        swfPath: this.getSwfPath(),
-        useStateClassSkin: true,
-        wmode: 'window',
         ended: () => this.setupCurrentTrack(),
-        error: event => this.handlePlayerError(event),
+        error: (event) => JPlayerManager.handlePlayerError(event),
+        keyEnabled: true,
         play: () => this.setupCurrentTrack(),
-        ready: () => this.setupCurrentTrack()
-      }
+        ready: () => this.setupCurrentTrack(),
+        supplied: "oga, mp3",
+        swfPath: JPlayerManager.getSwfPath(),
+        useStateClassSkin: true,
+        wmode: "window",
+      },
     );
   }
 
-  getSwfPath() {
-    return swfFile.replace(/\/[^/]*$/, '');
+  static getSwfPath() {
+    return swfFile.replace(/\/[^/]*$/, "");
   }
 
   setupCurrentTrack() {
@@ -80,8 +81,8 @@ class JPlayerManager {
     }
 
     if (poster && track.poster) {
-      poster.setAttribute('src', track.poster);
-      poster.setAttribute('alt', `${track.artist} - ${track.title}`);
+      poster.setAttribute("src", track.poster);
+      poster.setAttribute("alt", `${track.artist} - ${track.title}`);
     }
 
     if (record && track.record) {
@@ -93,7 +94,9 @@ class JPlayerManager {
     }
   }
 
-  handlePlayerError() {}
+  static handlePlayerError(event) {
+    console.error("Player error:", event);
+  }
 
   getPlaylistState() {
     if (!this.jPlaylist) {
@@ -101,10 +104,10 @@ class JPlayerManager {
     }
 
     return {
-      isInitialized: this.isInitialized,
       currentTrack: this.jPlaylist.current,
+      currentTrackData: this.jPlaylist.playlist[this.jPlaylist.current] || null,
+      isInitialized: this.isInitialized,
       totalTracks: this.jPlaylist.playlist.length,
-      currentTrackData: this.jPlaylist.playlist[this.jPlaylist.current] || null
     };
   }
 

@@ -1,5 +1,5 @@
 .jp-playlist {
-  @apply mx-auto w-11/12 rounded-b bg-gray-700 text-xs text-gray-200 shadow-md;
+  @apply mx-auto w-11/12 rounded-b-sm bg-gray-700 text-xs text-gray-200 shadow-md;
 
   a {
     @apply text-current;
@@ -27,7 +27,7 @@
 }
 
 .jp-playlist-item {
-  @apply flex-grow py-2 px-3;
+  @apply grow py-2 px-3;
 }
 
 .jp-free-media,

@@ -1,42 +1,44 @@
-import posterAudiotheme from '../media/poster-audiotheme.jpg';
+import posterAudiotheme from "../media/poster-audiotheme.jpg";
 
 class AudioPlayerApp {
+  isInitialized = false;
+
   constructor() {
-    this.isInitialized = false;
     this.elements = {
-      posterImg: null,
+      jpAudio: null,
       player: null,
+      posterImg: null,
       toggles: null,
-      jpAudio: null
     };
   }
 
   init() {
-    this.setupTouchDetection();
+    AudioPlayerApp.setupTouchDetection();
+
     this.setupElements();
     this.setInitialPoster();
     this.setupPlaylistDisplay();
     this.isInitialized = true;
   }
 
-  setupTouchDetection() {
-    const isTouchDevice = 'ontouchstart' in window || 'onmsgesturechange' in window;
-    document.body.classList.add(isTouchDevice ? 'touch' : 'no-touch');
+  static setupTouchDetection() {
+    const isTouchDevice = "ontouchstart" in window || "onmsgesturechange" in window;
+    document.body.classList.add(isTouchDevice ? "touch" : "no-touch");
   }
 
   setupElements() {
     this.elements = {
-      posterImg: document.getElementById('track-poster-img'),
-      player: document.querySelector('.audio-player'),
-      toggles: document.querySelectorAll('.playlist-toggles button'),
-      jpAudio: document.querySelector('.jp-audio')
+      jpAudio: document.querySelector(".jp-audio"),
+      player: document.querySelector(".audio-player"),
+      posterImg: document.querySelector("#track-poster-img"),
+      toggles: document.querySelectorAll(".playlist-toggles button"),
     };
   }
 
   setInitialPoster() {
     if (this.elements.posterImg) {
       this.elements.posterImg.src = posterAudiotheme;
-      this.elements.posterImg.alt = 'Track poster';
+      this.elements.posterImg.alt = "Track poster";
     }
   }
 
@@ -45,14 +47,14 @@ class AudioPlayerApp {
       return;
     }
 
-    this.elements.toggles.forEach(toggle => {
-      toggle.addEventListener('click', this.handlePlaylistToggle.bind(this), false);
-    });
+    for (const toggle of this.elements.toggles) {
+      toggle.addEventListener("click", this.handlePlaylistToggle.bind(this), false);
+    }
   }
 
   handlePlaylistToggle(event) {
-    const currentToggle = Array.from(this.elements.toggles).find(toggle =>
-      toggle.classList.contains('selected')
+    const currentToggle = [...this.elements.toggles].find((toggle) =>
+      toggle.classList.contains("selected"),
     );
     const selectedToggle = event.target;
 
@@ -62,24 +64,22 @@ class AudioPlayerApp {
 
     this.elements.jpAudio.scrollTop = 0;
 
-    currentToggle.classList.remove('selected');
-    selectedToggle.classList.add('selected');
+    currentToggle.classList.remove("selected");
+    selectedToggle.classList.add("selected");
 
-    const currentDisplay = currentToggle.getAttribute('data-display');
-    const newDisplay = selectedToggle.getAttribute('data-display');
+    const currentDisplay = currentToggle.dataset.display;
+    const newDisplay = selectedToggle.dataset.display;
 
     this.elements.player.classList.remove(`playlist-${currentDisplay}`);
     this.elements.player.classList.add(`playlist-${newDisplay}`);
   }
 
   getState() {
-    return {
-      isInitialized: this.isInitialized,
-      elements: Object.keys(this.elements).reduce((acc, key) => {
-        acc[key] = this.elements[key] !== null;
-        return acc;
-      }, {})
-    };
+    const elements = {};
+    for (const key of Object.keys(this.elements)) {
+      elements[key] = this.elements[key] !== null;
+    }
+    return { elements, isInitialized: this.isInitialized };
   }
 }
 

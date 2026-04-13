@@ -1,5 +1,5 @@
 .jp-interface {
-  @apply relative flex h-8 w-full rounded-t bg-gradient-to-b from-gray-600 to-gray-800 shadow-md;
+  @apply relative flex h-8 w-full rounded-t-sm bg-linear-to-b from-gray-600 to-gray-800 shadow-md;
 
   > div {
     @apply flex items-center justify-center gap-3 px-3;
@@ -64,7 +64,7 @@
 
 .jp-volume-bar,
 .jp-progress {
-  @apply flex h-2 flex-grow rounded-sm border border-solid border-gray-800 shadow-sm;
+  @apply flex h-2 grow rounded-sm border border-solid border-gray-800 shadow-sm;
 }
 
 .jp-volume-bar-value {
@@ -72,11 +72,11 @@
 }
 
 .jp-time-rail {
-  @apply relative flex-grow border-l border-r border-solid border-l-gray-700 border-r-gray-800 px-3;
+  @apply relative grow border-l border-r border-solid border-l-gray-700 border-r-gray-800 px-3;
 
   &:before,
   &:after {
-    content: ' ';
+    content: " ";
     @apply absolute top-0 bottom-0 border-l border-solid;
   }
 
@@ -96,10 +96,10 @@
 
 .jp-volume-bar,
 .jp-seek-bar {
-  @apply relative cursor-pointer bg-gradient-to-b from-gray-700 to-gray-600;
+  @apply relative cursor-pointer bg-linear-to-b from-gray-700 to-gray-600;
 }
 
 .jp-volume-bar-value,
 .jp-play-bar {
-  @apply bg-gradient-to-b from-primary-500 to-primary-300 shadow-sm;
+  @apply bg-linear-to-b from-primary-500 to-primary-300 shadow-sm;
 }

@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": "npm run fix"
+      }
+    ]
+  },
+  "version": 1
+}
